@@ -50,13 +50,65 @@
   </div>
 
   <div class="slide">
-    <h2>📚 Parte 1 – Slides Teóricos</h2>
-    <p><strong>Objetivo:</strong> Compreender como organizar arquivos CSS para projetos web de forma eficiente.</p>
+    <h2>📁 Organização Física</h2>
+    <p>Separar o CSS em arquivos conforme sua função facilita a leitura, manutenção e escalabilidade.</p>
+    <div class="code-block">
+/css
+ ├── reset.css       /* Zera os estilos padrões */
+ ├── base.css        /* Tipografia e estilos globais */
+ ├── layout.css      /* Grid, containers e estrutura */
+ ├── components.css  /* Botões, cards, menus etc */
+ └── responsive.css  /* Media queries */
+    </div>
+  </div>
+
+  <div class="slide">
+    <h2>🧱 Organização Lógica</h2>
+    <p>Dentro de um arquivo CSS único, siga uma estrutura clara:</p>
+    <ol>
+      <li>Comentários e importações</li>
+      <li>Reset</li>
+      <li>Variáveis</li>
+      <li>Estilos globais</li>
+      <li>Layout</li>
+      <li>Componentes</li>
+      <li>Utilitários</li>
+      <li>Responsivo</li>
+    </ol>
+  </div>
+
+  <div class="slide">
+    <h2>💬 Comentários em CSS</h2>
+    <p>Utilize comentários para indicar a finalidade dos blocos de código:</p>
+    <div class="code-block">
+/* ===== RESET DE ESTILO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== VARIÁVEIS ===== */
+:root {
+  --primary-color: #0057ff;
+  --font-size: 16px;
+}
+
+/* ===== COMPONENTES ===== */
+.button {
+  background: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+    </div>
+  </div>
+
+  <div class="slide">
+    <h2>🌐 Referências</h2>
     <ul>
-      <li>📁 Organização física: separar arquivos por função</li>
-      <li>🧱 Organização lógica: estruturar blocos de código em ordem clara</li>
-      <li>💬 Comentários em CSS explicando o propósito de cada seletor</li>
-      <li>🌐 Referências: <a href="https://www.w3schools.com/css/" target="_blank">W3Schools</a>, <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">MDN Web Docs</a>, <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+      <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools</a> – Ótimo para iniciantes, com exemplos claros.</li>
+      <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">MDN Web Docs</a> – Referência oficial e completa.</li>
+      <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a> – Artigos avançados, truques e guias modernos.</li>
     </ul>
   </div>
 
